@@ -36,24 +36,23 @@ caption{
 table{
 
   border-collapse: collapse;
-  width: 600px;
   margin: auto;
+  width: 600px;
 }
 
 th{
 
-  background-color: var(--cor1);
+  background-color: var(--cor3);
   color: var(--cor2);
-  border: 1px solid  var(--cor3);
+  border: 1px solid var(--cor0);
   padding: 3%;
 }
 
 td{
 
-  border: 1px solid var(--cor3);
-  background-color: var(--cor2);
-  width: 50px;
   padding: 3%;
+  background-color: var(--cor2);
+  border: 1px solid var(--cor1);
 }
 
 td.centro{
@@ -64,17 +63,6 @@ td.centro{
 td.num{
 
   text-align: right;
-}
-
-footer{
-
-  text-align: center;
-  background-color: var(--cor4);
-  color: var(--cor2);
-  text-decoration: underline;
-  border-radius: 0px 0px 5px 5px;
-  box-shadow: 2px 2px 4px var(--cor5);
-  padding-bottom: 0.4%;
 }
 
 a{
@@ -91,20 +79,19 @@ a{
 <table>
   <caption>Unidades Federativas do Brasil por População.<br>
   2022</caption>
-  <head>
-    <tr>
-      <th scope="col">Posição</th>
-       <th scope="col">Estado</th>
-        <th scope="col">População</th>
-    </tr>
-  </head>
+ <thead>
+  <tr>
+    <th scope="col">Posição</th>
+     <th scope="col">Estado</th>
+      <th scope="col">População</th>
+  </tr>
+</thead>
    <tbody>
     <tr>
       <td class="centro">1</td>
        <td>São Paulo</td>
         <td class="num">44.420,459</td>
     </tr>
-   </tbody>
     <tr>
       <td class="centro">2</td>
        <td>Minas Gerais</td>
@@ -238,8 +225,8 @@ a{
   </tbody>
   <tfoot>
     <tr>
-      <th scope="row">Total de Habitantes</th>
-       <td style="text-align: right; font-weight: bold; background-color: #a7a6a69f;">214.969,129</td>
+      <th>Total de Habitantes</th>
+       <td style="text-align: right; font-weight: bold; background-color: var(--cor3);">214.969,129</td>
     </tr>
   </tfoot>
 </table>
