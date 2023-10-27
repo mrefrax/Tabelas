@@ -21,7 +21,7 @@
 
 body{
 
-    background-color: var(--cor0);
+    background-color: var(--cor2);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,8 +29,7 @@ caption{
 
   font-size: 1.5em;
   background-color: var(--cor0);
-  border: 1px solid var(--cor1);
-  font-weight: bold;
+  border: 1px solid var(--cor3);
 }
 
 table{
@@ -42,17 +41,21 @@ table{
 
 th{
 
-  background-color: var(--cor3);
-  color: var(--cor2);
-  border: 1px solid var(--cor0);
   padding: 3%;
+  background-color: var(--cor1);
+  color: var(--cor2);
+  border: 1px solid var(--cor3);
+}
+
+tbody > tr:nth-child(2n){
+
+  background-color: #afaeaea4;
 }
 
 td{
 
-  padding: 3%;
-  background-color: var(--cor2);
-  border: 1px solid var(--cor1);
+padding: 3%;
+border: 1px solid var(--cor3);
 }
 
 td.centro{
@@ -80,7 +83,7 @@ td.num{
      <th scope="col">Estado</th>
       <th scope="col">População</th>
   </tr>
-</thead>
+ </thead>
    <tbody>
     <tr>
       <td class="centro">1</td>
@@ -96,7 +99,6 @@ td.num{
       <td class="centro">3</td>
        <td>Rio de Janeiro</td>
         <td class="num">16.054,524</td>
-    </tr>
     <tr>
       <td class="centro">4</td>
        <td>Bahia</td>
@@ -220,8 +222,8 @@ td.num{
   </tbody>
   <tfoot>
     <tr>
-      <th scope="row">Total de Habitantes</th>
-       <td style="text-align: right; font-weight: bold; background-color: var(--cor3);">214.969,129</td>
+      <th>Total de Habitantes</th>
+       <td style="font-weight: bold; text-align: right; background-color: var(--cor3);">214.969,129</td>
     </tr>
   </tfoot>
 </table>
