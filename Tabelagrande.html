@@ -21,46 +21,56 @@
 
 body{
 
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     font-family: Arial, Helvetica, sans-serif;
 }
 
 caption{
 
-  background-color: var(--cor2);
+  border: 1px solid var(--cor4);
+  background-color: var(--cor1);
   font-size: 1.5em;
-  border: 1px solid;
 }
 
 table{
 
   border-collapse: collapse;
-  margin: auto;
   width: 600px;
+  margin: auto;
 }
 
 tbody > tr:nth-child(odd){
 
-  background-color: #ffffff;
+  background-color: var(--cor1);
 }
 
 tbody > tr:nth-child(even){
 
-  background-color: #c7c4c4;
+  background-color: var(--cor2);
 }
 
 th{
 
-  padding: 3%;
-  border: 1px solid var(--cor3);
+  border: 1px solid var(--cor4);
   background-color: var(--cor3);
   color: var(--cor2);
+  padding: 3%;
 }
 
 td{
 
   padding: 3%;
-  border: 1px solid var(--cor3);
+  border: 1px solid var(--cor4);
+}
+
+td.centro{
+
+  text-align: center;
+}
+
+td.num{
+
+  text-align: right;
 }
 
 </style>
@@ -223,7 +233,6 @@ td{
     </tr>
   </tfoot>
 </table>
-
 
    </body>
 </html>
