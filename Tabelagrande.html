@@ -35,34 +35,24 @@ caption{
 
 table{
 
-  margin: auto;
   border-collapse: collapse;
-  width: 600px;
+  margin: auto;
+  width: 500px;
   position: relative;
+}
+
+th{
+
+  color: var(--cor2);
+  background-color: var(--cor6);
+  padding: 3%;
+  border: 1px solid var(--cor4);
 }
 
 thead > tr > th{
 
   position: sticky;
   top: 0;
-  background-color: var(--cor6);
-}
-
-tbody > tr:nth-child(odd){
-
-  background-color: var(--cor2);
-}
-
-tbody > tr:nth-child(even){
-
-  background-color: var(--cor1);
-}
-
-th{
-
-  padding: 3%;
-  border: 1px solid var(--cor4);
-  color: var(--cor2);
   background-color: var(--cor6);
 }
 
@@ -75,6 +65,16 @@ td{
 td.num{
 
   text-align: right;
+}
+
+tbody > tr:nth-child(odd){
+
+  background-color: var(--cor2);
+}
+
+tbody > tr:nth-child(even){
+
+  background-color: var(--cor1);
 }
 
 </style>
@@ -114,28 +114,28 @@ td.num{
        <td class="num">11.443,208</td>
     </tr>
     <tr>
-       <td>Rio Grande do Sul</td>
-        <td class="num">10.693,929</td>
+      <td>Rio Grande do Sul</td>
+       <td class="num">10.693,929</td>
     </tr>
      <tr>
       <td>Pernambuco</td>
        <td class="num">9.058,155</td>
      </tr>
      <tr>
-       <td>Ceará</td>
-        <td class="num">8.791,688</td>
+      <td>Ceará</td>
+       <td class="num">8.791,688</td>
      </tr>
      <tr>
-       <td>Pará</td>
-        <td class="num">8.116,132</td>
+      <td>Pará</td>
+       <td class="num">8.116,132</td>
      </tr>
      <tr>
-       <td>Santa Catarina</td>
-        <td class="num">7.609,601</td>
+      <td>Santa Catarina</td>
+       <td class="num">7.609,601</td>
      </tr>
      <tr>
-       <td>Goiás</td>
-        <td class="num">7.055,228</td>
+      <td>Goiás</td>
+       <td class="num">7.055,228</td>
      </tr>
      <tr>
        <td>Maranhão</td>
@@ -205,7 +205,7 @@ td.num{
   <tfoot>
     <tr>
       <th scope="row">Total de Habitantes</th>
-       <td style="text-align: right; background-color: var(--cor3); font-weight: bold;">214.969,129</td>
+       <td style="text-align: right; background-color: var(--cor6); font-weight: bold;">214.969,129</td>
     </tr>
   </tfoot>
 </table>
