@@ -28,10 +28,10 @@ body{
 
 table{
 
-  position: relative;
   margin: auto;
-  width: 600px;
   border-collapse: collapse;
+  width: 600px;
+  position: relative;
 }
 
 caption{
@@ -50,9 +50,9 @@ thead > tr > th{
 
 th{
 
+  color: var(--cor2);
   padding: 3%;
   border: 1px solid var(--cor4);
-  color: var(--cor2);
   background-color: var(--cor6);
 }
 
@@ -60,16 +60,6 @@ td{
 
   padding: 3%;
   border: 1px solid var(--cor4);
-}
-
-tbody > tr:nth-child(odd){
-
-  background-color: var(--cor2);
-}
-
-tbody > tr:nth-child(even){
-
-  background-color: var(--cor1);
 }
 
 td.centro{
@@ -80,6 +70,16 @@ td.centro{
 td.num{
 
   text-align: right;
+}
+
+tbody > tr:nth-child(odd){
+
+  background-color: var(--cor2);
+}
+
+tbody > tr:nth-child(even){
+
+  background-color: var(--cor1);
 }
 
 </style>
@@ -93,31 +93,31 @@ td.num{
   2022</caption>
  <thead>
   <tr>
-   <th scope="col">Posição</th>
-    <th scope="col">Estado</th>
-     <th scope="col">População</th>
+    <th scope="col">Posição</th>
+     <th scope="col">Estado</th>
+      <th scope="col">População</th>
   </tr>
  </thead>
    <tbody>
     <tr>
-     <td class="centro">1</td>
-      <td>São Paulo</td>
-       <td class="num">44.420,459</td>
+      <td class="centro">1</td>
+       <td>São Paulo</td>
+        <td class="num">44.420,459</td>
     </tr>
     <tr>
-     <td class="centro">2</td>
-      <td>Minas Gerais</td>
-       <td class="num">20.538,718</td>
+      <td class="centro">2</td>
+       <td>Minas Gerais</td>
+        <td class="num">20.538,718</td>
     </tr>
     <tr>
       <td class="centro">3</td>
-      <td>Rio de Janeiro</td>
-       <td class="num">16.054,524</td>
+       <td>Rio de Janeiro</td>
+        <td class="num">16.054,524</td>
     </tr>
     <tr>
       <td class="centro">4</td>
-      <td>Bahia</td>
-       <td class="num">14.136,417</td>
+       <td>Bahia</td>
+        <td class="num">14.136,417</td>
     </tr>
     <tr>
       <td class="centro">5</td>
