@@ -10,13 +10,12 @@
 
 :root{
 
-  --cor0: #e9e9e9;
-  --cor1: #a7a6a69f;
-  --cor2: #ffffff;
-  --cor3: #808080af;
-  --cor4: #000000;
-  --cor5: #00000096;
-  --cor6: #5e5c5c;
+  --cor0: #a7a6a69f;
+  --cor1: #ffffff;
+  --cor2: #808080af;
+  --cor3: #000000;
+  --cor4: #00000096;
+  --cor5: #5e5c5c;
 }
 
 
@@ -27,12 +26,10 @@ body{
 }
 
 table{
-
   position: relative;
   margin: auto;
   width: 600px;
   border-collapse: collapse;
-
 }
 
 caption{
@@ -40,7 +37,6 @@ caption{
   border: 1px solid var(--cor4);
   font-size: 1.5em;
   background-color: var(--cor1);
-
 }
 
 thead > tr >th{
@@ -71,17 +67,7 @@ tbody > tr:nth-child(even){
 td{
 
   padding: 3%;
-  border: 1px solid var(--cor4);
-}
-
-td.centro{
-
-  text-align: center;
-}
-
-td.num{
-
-  text-align: right;
+  background-color: var(--cor1);
 }
 
 </style>
@@ -95,16 +81,16 @@ td.num{
   2022</caption>
  <thead>
   <tr>
-    <th scope="col">Posição</th>
-     <th scope="col">Estado</th>
-      <th scope="col">População</th>
+   <td scope="col">Posição</td>
+    <td scope="col">Estado</td>
+     <td scope="col">População</td>
   </tr>
  </thead>
    <tbody>
     <tr>
-      <td class="centro">1</td>
-       <td>São Paulo</td>
-        <td class="num">44.420,459</td>
+     <td class="centro">1</td>
+      <td>São Paulo</td>
+       <td class="num">44.420,459</td>
     </tr>
     <tr>
       <td class="centro">2</td>
