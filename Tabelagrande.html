@@ -28,20 +28,22 @@ body{
 
 table{
 
-  margin: auto;
-  border-collapse: collapse;
-  width: 600px;
   position: relative;
+  margin: auto;
+  width: 600px;
+  border-collapse: collapse;
+
 }
 
 caption{
 
   border: 1px solid var(--cor4);
-  background-color: var(--cor1);
   font-size: 1.5em;
+  background-color: var(--cor1);
+
 }
 
-thead > tr > th{
+thead > tr >th{
 
   position: sticky;
   top: 0;
@@ -50,10 +52,20 @@ thead > tr > th{
 
 th{
 
-  color: var(--cor2);
   padding: 3%;
   border: 1px solid var(--cor4);
+  color: var(--cor2);
   background-color: var(--cor6);
+}
+
+tbody > tr:nth-child(odd){
+
+  background-color: var(--cor2);
+}
+
+tbody > tr:nth-child(even){
+
+  background-color: var(--cor1);
 }
 
 td{
@@ -72,16 +84,6 @@ td.num{
   text-align: right;
 }
 
-tbody > tr:nth-child(odd){
-
-  background-color: var(--cor2);
-}
-
-tbody > tr:nth-child(even){
-
-  background-color: var(--cor1);
-}
-
 </style>
 
   </head>
@@ -90,14 +92,14 @@ tbody > tr:nth-child(even){
 
 <table>
   <caption>Unidades Federativas do Brasil por População.<br>
-  2022<caption>
+  2022</caption>
  <thead>
   <tr>
     <th scope="col">Posição</th>
      <th scope="col">Estado</th>
       <th scope="col">População</th>
   </tr>
-    </thead>
+ </thead>
    <tbody>
     <tr>
       <td class="centro">1</td>
@@ -121,8 +123,8 @@ tbody > tr:nth-child(even){
     </tr>
     <tr>
       <td class="centro">5</td>
-      <td>Paraná</td>
-       <td class="num">11.443,208</td>
+       <td>Paraná</td>
+        <td class="num">11.443,208</td>
     </tr>
     <tr>
       <td class="centro">6</td>
@@ -236,11 +238,11 @@ tbody > tr:nth-child(even){
      </tr>
   </tbody>
   <tfoot>
-   <tr>
-     <th scope="row" colspan="2">Total de Habitantes</th>
-      <td style="text-align: right; background-color: var(--cor6); font-weight: bold;">214.969,129</td>
-   </tr>
-    </tfoot>
+    <tr>
+      <th scope="row" colspan="2">Total de Habitantes</th>
+       <td style="text-align: right; background-color: var(--cor6); font-weight: bold;">214.969,129</td>
+    </tr>
+  </tfoot>
 </table>
 
    </body>
