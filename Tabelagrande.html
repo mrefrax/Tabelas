@@ -28,22 +28,19 @@ body{
 
 table{
 
-  position: relative;
+  border-collapse: collapse;
   margin: auto;
   width: 600px;
-  border-collapse: collapse;
-
+  position: relative;
 }
 
 caption{
 
-  border: 1px solid var(--cor4);
   font-size: 1.5em;
   background-color: var(--cor1);
-
 }
 
-thead > tr >th{
+thead > tr > th{
 
   position: sticky;
   top: 0;
@@ -58,14 +55,14 @@ th{
   background-color: var(--cor6);
 }
 
-tbody > tr:nth-child(odd){
-
-  background-color: var(--cor2);
-}
-
 tbody > tr:nth-child(even){
 
   background-color: var(--cor1);
+}
+
+tbody > tr:nth-child(odd){
+
+  background-color: var(--cor2);
 }
 
 td{
@@ -239,7 +236,7 @@ td.num{
   </tbody>
   <tfoot>
     <tr>
-      <th scope="row" colspan="2">Total de Habitantes</th>
+      <th scope="col" colspan="2">Total de Habitantes</th>
        <td style="text-align: right; background-color: var(--cor6); font-weight: bold;">214.969,129</td>
     </tr>
   </tfoot>
