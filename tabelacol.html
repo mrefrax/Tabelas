@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+         <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Tabela</title>
+
+
+        <style>
+
+            body{
+
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            table{
+
+                margin: auto;
+                width: 600px;
+                border-collapse: collapse;
+            }
+            
+
+            col.cnome{
+
+                background-color: rgb(184, 182, 180);
+            }
+
+            th{
+
+                border: 1px solid #333333;
+            }
+
+            td{
+
+                border: 1px solid #333333;
+            }
+
+        </style>
+    </head>
+<body>
+
+    <table>
+        <colgroup>
+            <col class="cnome" span="2">
+            <col class="cidade">
+            <col class="csexo">
+            <col class="cprofissão">
+        </colgroup>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Moura</td>
+            <td>27</td>
+            <td>Feminino</td>
+            <td>Enpresaria</td>
+        </tr>
+        <tr>
+            <td>Claúdio</td>
+            <td>30</td>
+            <td>Masculino</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Manuella</td>
+            <td>24</td>
+            <td>Feminino</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td>29</td>
+            <td>Masculino</td>
+            <td>Programador</td>
+        </tr>
+    </table>
