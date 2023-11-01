@@ -12,6 +12,9 @@
     body{
 
         font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        min-height: 100vh;
+        display: flex;
     }
 
     table{
@@ -22,6 +25,10 @@
         width: 600px;
     }
 
+    col.cgrupo{
+
+        background-color: #b9b8b8;
+    }
 
     caption{
 
@@ -48,22 +55,23 @@
 <body> 
 
     <table>
+        <colgroup> 
+            <col class="cgrupo" span="2">
+            <col class="cnome">
+            <col class="cfilmes">
+        </colgroup>
         <caption>Filmes Favoritos</caption>
      <thead>
         <tr>
             <th>Grupo</th>
              <th>Nome</th>
-              <th scope="col" colspan="3">Filmes</th>
+              <th scope="colgroup" colspan="3">Fimes</th>
         </tr>
      </thead>
       <tbody>
         <tr>
             <th scope="rowgroup" rowspan="3">Mulheres</th>
-            <td>Ana Moura</td>
-            <td>Inception</td>
-            <td>Batman</td>
-            <td>Vingadores</td>
-        </tr>
+
         <tr>
             <td>Juliana Santos</td>
             <td>Oblivion</td>
